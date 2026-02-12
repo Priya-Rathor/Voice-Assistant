@@ -1,0 +1,27 @@
+# Voice AI Assistant Dependencies
+# Python 3.12+ Compatible
+
+# Google Generative AI (Gemini)
+google-generativeai>=0.3.0
+
+# FastAPI Backend
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+
+# Speech Recognition (for Python backend if needed)
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.13
+
+# Text-to-Speech (for Python backend if needed)
+pyttsx3>=2.90
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Audio Processing (required by SpeechRecognition)
+# Note: PyAudio may require system-level dependencies
+# On Linux: sudo apt-get install python3-pyaudio portaudio19-dev
+# On macOS: brew install portaudio
+# On Windows: PyAudio binary wheels available
