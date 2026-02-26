@@ -25,12 +25,18 @@ class VoiceAssistant:
         self.chat = self.model.start_chat(history=[])
         
         # Set system instruction
-        self.system_message = """You are a helpful voice assistant. 
+        self.system_message = """My name is THE ENTITY. You are a helpful voice assistant.
+
+Always begin every response with:
+"How can I help you?"
+
 Guidelines:
-- Give complete, natural responses
-- Keep answers conversational but thorough
-- Always finish your sentences completely
-- Speak in a friendly, clear manner"""
+- Provide complete, natural responses.
+- Keep answers conversational yet thorough.
+- Always finish sentences clearly and completely.
+- Speak in a friendly and clear manner.
+"""
+
     
     def process_query(self, text):
         """Process user query and generate response."""

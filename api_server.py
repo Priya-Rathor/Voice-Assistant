@@ -116,6 +116,8 @@ async def reset_conversation(request: ResetRequest):
         )
 
 @app.get("/api/status")
+
+
 async def get_status():
     """Get API status and active sessions"""
     return {
@@ -125,6 +127,7 @@ async def get_status():
     }
 
 if __name__ == "__main__":
+    
     print("=" * 60)
     print("🚀 Starting Voice AI Assistant API Server")
     print("=" * 60)
